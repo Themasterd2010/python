@@ -1,0 +1,48 @@
+start
+
+    ///intialiaze
+    UP = 1
+    position = 0
+    rotation = 0
+    draw_circle = 0
+    answer = ""
+    first_time = 1
+    i = 0
+
+    ///input and proccessing
+    output "rotate 90 degrees? (y/n)"
+    input answer
+    if answer == "y"
+        rotation = (rotation + 90) % 360
+        output "turned 90 degrees to the right"
+
+    output "do you want to move the pen up/down? (y/n)"
+    input answer
+    if answer == "y"
+        if UP == 1
+            UP = 0
+            output "lowered arm"
+        else
+            UP = 1
+            output "raised arm"
+
+    output "do you want to move one inch? (y/n)"
+    input answer
+    if answer == "y"
+        position = position + 1
+        if UP == 1:
+            output "moved 1 inch"
+        else:
+            output "moved and drew 1 inch"
+    
+    output "do you want to draw a one inch circle? (y/n)"
+    input answer
+    if answer == "y"
+        draw_circle = 1
+        while i < 360:
+            rotate 1 degree
+            move .1 inches
+            i = i + 1
+        output "Circle drawn"
+    
+stop

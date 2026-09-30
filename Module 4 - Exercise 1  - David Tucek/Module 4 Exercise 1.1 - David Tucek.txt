@@ -1,0 +1,21 @@
+Start
+
+    //input
+    output "please give me to numbers to compare: "
+    input number_one
+    input number_two
+
+    //processing
+    if number_one = number_two
+        answer = The numbers are equal
+
+    elif number_one > number_two
+        answer = The first is larger
+    
+    else
+        answer = The second is larger
+
+    //output
+    output "After checking your numbers we found that: " + answer + ". Thank you for using our program!"
+
+Stop

@@ -1,0 +1,13 @@
+start
+
+    //input
+    output "please give me your monthly rent"
+    input monthly_rent
+
+    //processing
+    daily_rent = monthly_rent / 30
+
+    //output
+    output "your daily rent is $" + daily_rent
+
+stop

@@ -1,0 +1,36 @@
+start
+
+
+    //initialize
+    i = 0
+
+    //input and processing
+    output"Welcome to the Skulling Financial Services Retirement Planning Calculator!"
+    output "Please enter the number of years until your retirement: "
+    input years_to_retirement
+
+    output "Please enter the annual amount of money you can save: "
+    input annual_savings
+
+
+    total_savings = 0.0
+    while i < years_to_retirement:
+        total_savings = total_savings + annual_savings
+        total_savings = total_savings + (total_savings * 0.03)
+        i = i + 1
+
+    //output and processing
+    i = 0
+    while i <= 30 or (total_savings - (60000 * i)) <= 0:
+        total_savings = ((total_savings - 60000))
+        total_savings = total_savings * 0.03
+        
+        output "Year " + i + ": $" + total_savings
+        i = i + 1
+
+    if (total_savings - (60000 * i)) <= 0:
+            output "Year " + i + ": No savings remaining."
+
+    output "Thank you for using the Skulling Financial Services Retirement Planning Calculator!"
+
+stop

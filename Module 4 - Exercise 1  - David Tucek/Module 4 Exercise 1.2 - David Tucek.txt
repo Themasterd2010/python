@@ -1,0 +1,27 @@
+Start
+
+    //input
+    output "Please input three numbers to see if the sum of any two numbers equals the third."
+    input number_one
+    input number_two
+    input number_three
+
+
+    //processing
+    answer = false
+    if number_one + number_two = number_three
+        answer = true
+    if number_one + number_three = number_two
+        answer = true
+    if number_two + number_three = number_one
+        answer = true
+    
+
+    //output
+    if answer = true
+        output "Success! Two numbers were able to equal the third."
+
+    else   
+        output "Sorry, two of your numbers were not able to equal the third."
+
+Stop

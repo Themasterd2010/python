@@ -1,0 +1,15 @@
+start
+
+    //input section
+    output "Please give me the number of hours worked per day"
+    input hours_worked_per_day
+
+    //processing
+    total_hours_per_week_worked = hours_worked_per_day * 5
+    total_hours_per_year_worked = total_hours_per_week_worked * 52
+
+    //output
+    output "Your total hours per week is " + total_hours_per_week_worked
+    output "Your total hours per year is " + total_hours_per_year_worked
+
+Stop
